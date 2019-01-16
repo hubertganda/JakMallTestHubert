@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_72"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:background="@drawable/bg_rounded_corner"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/topjokes_txt_jokes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:padding="@dimen/dimen_16"
+            android:text="@string/string_sample_medium"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/colorBlack" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:id="@+id/topjokes_txt_ontop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_12"
+                android:text="We're on Top"
+                android:textColor="@color/colorBlack"
+                android:textAlignment="center"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/topjokes_btn_gotop"
+                android:layout_width="@dimen/dimen_32"
+                android:layout_height="@dimen/dimen_32"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/arrow_up"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
